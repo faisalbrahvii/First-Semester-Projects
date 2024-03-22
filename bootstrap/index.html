@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        
+        .box{
+            
+            height: 50px;
+        }
+        .box2{
+            
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="containe-fluid text-center" ><h1>CARDS</h1></div>
+    <div class="box" ></div>
+    <div class="up text-center">Upcoming Produced</div>
+    <div class="box2"></div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col lg-3 md-6 sm-12">
+                <div class="card" style="width: 18rem;">
+                    <img src="pexels-nordic-overdrive-627678.jpg" class="card-img-top" height="180px" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">View product </a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col lg-3 md-6 sm-12">
+                <div class="card" style="width: 18rem;">
+                    <img src="pexels-mike-b-116675.jpg" class="card-img-top" height="180px" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal1">Go somewhere</a>
+
+                    </div>
+                  </div>
+            </div>
+            <div class="col lg-3 md-6 sm-12">
+                <div class="card" style="width: 18rem;">
+                    <img src="pexels-abdulwahab-alawadhi-3422964.jpg" class="card-img-top" height="180px" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col lg-3 md-6 sm-12">
+                <div class="card" style="width: 18rem;">
+                    <img src="pexels-jae-park-3802510.jpg" class="card-img-top" alt="..." height="180px"> 
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="d-grid gap-2 d-md-block text-center">
+         <a href="index.html"><button class="btn btn-primary text-center" type="button">1</button></a>
+            <a href="index2.html"><button class="btn btn-primary text-center" type="button">2</button></a>
+          </div>
+    </div>
+    <div class="container text-center mt-4">
+        <h3 style="color: red;">made by <span style="color: black;" >faisal</span></h3>
+      </div>
+    
+    <!-- model -->
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+    
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title"><img src="0x0.jpg" alt="" height="300px" width="100%"></h4>
+          </div>
+    
+          <!-- Modal body -->
+          <div class="modal-body">
+           <p>Price: 8000000</p>
+           <p>Color: Red</p>
+           <p>Model: 2022</p>
+          </div>
+    
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+
+<!-- 2nd model -->
+    <div class="modal" id="myModal1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+    
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title"><img src="0x0.jpg" alt="" height="300px" width="100%"></h4>
+          </div>
+    
+          <!-- Modal body -->
+          <div class="modal-body">
+            <p>
+              <a class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#mydata" role="button" >
+               Show features
+              </a>
+            </p>
+            <div class="collapse" id="mydata">
+              <div class="card card-body">
+                <p>Price: 8000000</p>
+           <p>Color: Red</p>
+           <p>Model: 2022</p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+
+
+    
+        
+</body>
+</html>

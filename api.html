@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoLocation</title>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js"> -->
+        <script 
+    src="https://maps.googleapis.com/maps/api/js">
+</script>
+</script>
+
+<style>
+    /* #demo{
+        height: 300px;
+        width: 300px;
+        border: 1px solid red;
+    } */
+</style>
+</head>
+<body>
+
+<h1>Trace your Location</h1>
+<button type="submit" onclick="getCoordinates()">GeoLocation</button>
+<div id="demo"></div>
+<script>
+var a = document.getElementById("demo");
+
+function getCoordinates(){
+    //navigator object is a browser object that allows a user to  reterive information about the specific 
+    //The JavaScript navigator object is used for browser detection. It can be used to get browser information such as appName, appCodeName, userAgent etc.
+
+//The navigator object is the window property, 
+
+    // where window is a top level object in javascript heirarchy
+    //The Navigator geolocation property is used to return a geolocation object by the browser which can be used to locate a user’s position. 
+//It is a read-only property and is only available on the approval of the user since it can compromise the user’s privacy.
+    if(window.navigator.geolocation){
+        //The getCurrentPosition method retrieves the current geographic location of the device.
+        // The location is expressed as a set of geographic coordinates together with information
+        navigator.geolocation.getCurrentPosition(showcoordinates);
+        alert("supporting");
+        // c = pos.coords.latitude;
+        // d = pos.coords.longitude;
+      
+    }
+    else{
+        alert("not supporting");
+    }
+ 
+
+//coord-> an object of type coordinates that provides different properties  longitude and latitude, altitude etc
+ function showcoordinates(pos){
+a.innerHTML= "latitude"+pos.coords.latitude+" longitude"+ pos.coords.longitude+"<br>";
+
+
+// loading google map
+// const a =document.getElementById("demo");
+//LatLng object literals are
+//a convenient way to add a LatLng coordinate and, in most cases, can be used
+//in place of a google.maps.LatLng object.
+
+// let latlng = new google.maps.LatLng(24.8616863,67.034556);
+// let map= new google.maps.Map(a,{
+//     center:latlng,
+//     zoom:16,    
+//     mapTypeId:"roadmap"
+    
+// });
+//create the map object
+// var mymap= new google.maps.Map(document.getElementById("demo"),myobj);
+
+
+//marker
+let marker=new google.maps.Marker({
+    position:latlng,
+    map:map,
+    draggable:true
+})
+ }
+}
+
+// document.write(window.innerHeight);
+// document.write("<br>"+window.innerWidth);
+
+
+// console.log(window);
+// console.log(navigator.geolocation);
+</script>
+
+
+
+    
+</body>
+</html>

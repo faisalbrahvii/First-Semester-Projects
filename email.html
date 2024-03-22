@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email</title>
+</head>
+<body>
+    <input type="text" id="inpt">
+    <span id="span"></span>
+    <button type="submit" onclick="sub()">Click</button>
+  
+    <script>
+        function sub(){
+            let input = document.getElementById("inpt").value;
+            let result = /^[\w]+@[A-Za-z]{4,5}[.]{1}[A-Za-z]{2}$/
+
+            if(!input){
+                document.getElementById("span").innerHTML = "Please fill this filed";
+            }else if(!result.test(input)){
+                document.getElementById("span").innerHTML = "Not valid";
+            }else{
+                document.getElementById("span").innerHTML = "Valid"
+            }
+        }
+    </script>
+
+</body>
+</html>
